@@ -1,3 +1,13 @@
+:root {
+    --primary-bg: #333;
+    --primary-text: #fff;
+    --accent-color: steelblue;
+    --shadow-color: gray;
+    --aside-bg: #eee;
+    --aside-text: #333;
+    --box-bg: rgb(194, 205, 233);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,30 +15,26 @@
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10 px 0;
-
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 10px 0;
+    /* fixed spacing typo */
 }
 
 h1 {
-    color: steelblue;
-}
-
-p {
-    padding: 0;
+    color: var(--accent-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--accent-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 nav a {
-    color: white;
+    color: var(--primary-text);
     padding: 10px;
     display: block;
 }
@@ -36,10 +42,11 @@ nav a {
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* fixed invalid alpha value */
     padding: 1em;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--aside-bg);
+    color: var(--aside-text);
     text-align: center;
 }
 
@@ -54,18 +61,11 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors */
-
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: rgb(194, 205, 233);
-}
-
-aside {
-    width: 20em;
-    text-align: center;
+    background-color: var(--box-bg);
 }
 
 main img {
@@ -79,5 +79,5 @@ aside h2 {
     position: absolute;
     top: 430px;
     left: 125px;
-    color: #fff;
+    color: var(--primary-text);
 }
