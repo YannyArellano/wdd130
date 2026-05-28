@@ -1,4 +1,3 @@
-/* 1. CSS Variables */
 :root {
     --primary-color: steelblue;
     --accent1-color: #333;
@@ -7,20 +6,17 @@
     --body-font: Arial, sans-serif;
 }
 
-/* 2. Reset Box Model */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 3. Body Styling */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* 4. Page Width */
 header,
 main,
 footer {
@@ -28,14 +24,12 @@ footer {
     margin: 0 auto;
 }
 
-/* 5. Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* 6. Basic Spacing */
 nav,
 p,
 section,
@@ -44,7 +38,6 @@ article {
     padding: 8px;
 }
 
-/* 7. Social Media Links */
 .socialmedia a {
     text-decoration: none;
 }
@@ -55,7 +48,6 @@ article {
     margin: 0 8px;
 }
 
-/* 8. Hero Section */
 .hero {
     position: relative;
 }
@@ -94,16 +86,12 @@ article {
     border-radius: 4px;
 }
 
-/* Shadow box style for sections */
 section h2 {
     margin: 24px;
     padding: 16px;
     background-color: #3c66b0;
-    /* white background for contrast */
     border-radius: 8px;
-    /* rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* subtle shadow */
 }
 
 section h2 {
