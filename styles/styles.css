@@ -8,21 +8,75 @@
     --box-bg: rgb(194, 205, 233);
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Footer */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
     background-color: var(--primary-bg);
     color: var(--primary-text);
-    padding: 10px 0;
-    /* fixed spacing typo */
+    padding: 1rem;
 }
 
+/* Navigation */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Heading */
 h1 {
     color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Main Section */
+main {
+    grid-column: 2 / 3;
 }
 
 main img {
@@ -31,20 +85,18 @@ main img {
     border: 1px solid var(--accent-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
-nav a {
-    color: var(--primary-text);
-    padding: 10px;
-    display: block;
-}
-
+/* Aside Section */
 aside {
-    width: 20em;
-    margin: 1em;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 20rem;
+    margin: 1rem 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    /* fixed invalid alpha value */
-    padding: 1em;
+    padding: 1rem;
     background-color: var(--aside-bg);
     color: var(--aside-text);
     text-align: center;
@@ -55,29 +107,22 @@ aside img {
     height: auto;
 }
 
-footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
+aside h2 {
+    margin-bottom: 1rem;
 }
 
+/* Box */
 .box {
-    margin: 1rem;
+    margin: 1rem 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: var(--box-bg);
 }
 
-main img {
-    float: right;
-    margin: 0 0 10px 10px;
-    width: 150px;
-    border-radius: 8px;
-}
-
-aside h2 {
-    position: absolute;
-    top: 430px;
-    left: 125px;
-    color: var(--primary-text);
+/* Footer */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem;
 }
