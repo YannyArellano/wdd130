@@ -31,7 +31,6 @@ footer {
 
 /* Header */
 header {
-    background-color: var(--primary-bg);
     color: var(--primary-text);
     padding: 1rem;
 }
