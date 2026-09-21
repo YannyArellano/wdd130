@@ -1,11 +1,80 @@
-/* :root {
+:root {
     --primary-color: #1f3b73;
+    --secondary-color: #f4a261;
     --accent1-color: #333;
-    --accent2-color: #fff;
-    --body-font: Arial, sans-serif;
-    --heading-font: Georgia, serif;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roamn", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20 px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125;
+}
+
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -137,7 +206,7 @@ footer p {
     height: auto;
 } */
 
-:root {
+/* :root {
     --primary-color: #1f3b73;
     --accent1-color: #333;
     --accent2-color: #fff;
@@ -156,7 +225,7 @@ body {
     color: var(--accent1-color);
 }
 
-/* CENTER PAGE */
+
 header,
 main,
 footer {
@@ -164,7 +233,7 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -183,7 +252,7 @@ header img {
     width: 100px;
 }
 
-/* NAVIGATION */
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -253,7 +322,7 @@ nav a:hover {
     width: 120px;
 }
 
-/* SECTIONS */
+
 section {
     border: 1px solid #ccc;
     padding: 25px;
@@ -266,7 +335,6 @@ section h2 {
     font-size: 2rem;
 }
 
-/* HISTORY */
 .history {
     display: grid;
     grid-template-columns: 1fr 250px 1fr;
@@ -278,7 +346,6 @@ section h2 {
     width: 100%;
 }
 
-/* ADVENTURES */
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
@@ -300,7 +367,6 @@ figcaption {
     margin-top: 8px;
 }
 
-/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -310,7 +376,6 @@ footer {
     margin-top: 20px;
 }
 
-/* SOCIAL ICONS */
 .socialmedia {
     display: flex;
     gap: 10px;
@@ -318,4 +383,4 @@ footer {
 
 .socialmedia img {
     width: 40px;
-}
+} */
